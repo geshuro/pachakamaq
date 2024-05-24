@@ -28,4 +28,4 @@ jobs:
           echo It is second dig-evolution ${{env.digimon_2}} !
           echo It is third dig-evolution ${{env.digimon_3}} !
       - name: Display data workflow
-        run: echo Event ${{toJson(github.event)}}
+        run: echo ${{toJson(github.event)}}
