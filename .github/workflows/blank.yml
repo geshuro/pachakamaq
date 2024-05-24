@@ -29,7 +29,7 @@ jobs:
           echo It is second dig-evolution ${{env.digimon_2}} !
           echo It is third dig-evolution ${{env.digimon_3}} !
       - name: Display owner digimon
-        run: echo The digimon's Owner is ${{env.owner_digimon}}!
+        run: echo "The digimon's Owner is ${{env.owner_digimon}}"
       - name: Display data workflow
         run: |
           echo Github actor is: $GITHUB_ACTOR
