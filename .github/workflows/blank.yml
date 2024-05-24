@@ -30,6 +30,8 @@ jobs:
           echo It is third dig-evolution ${{env.digimon_3}} !
       - name: Display owner digimon
         run: echo "The digimon's Owner is ${{env.owner_digimon}}"
+      - name: Display country digimon
+        run: echo "The digimon country is ${{vars.DIGIMON_COUNTRY}}"
       - name: Display data workflow
         run: |
           echo Github actor is: $GITHUB_ACTOR
