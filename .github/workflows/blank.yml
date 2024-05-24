@@ -16,6 +16,7 @@ jobs:
       digimon_1: "Agumon"
       digimon_2: "MetalGreymon"
       digimon_3: "WarGreymon"
+      owner_digimon: ${{secrets.OWNER_DIGIMON}}
 
     runs-on: ubuntu-latest
 
@@ -27,6 +28,8 @@ jobs:
           echo It is first dig-evolution ${{env.digimon_1}} !
           echo It is second dig-evolution ${{env.digimon_2}} !
           echo It is third dig-evolution ${{env.digimon_3}} !
+      - name: Display owner digimon
+        run: echo The digimon's Owner is ${{env.owner_digimon}}!
       - name: Display data workflow
         run: |
           echo Github actor is: $GITHUB_ACTOR
