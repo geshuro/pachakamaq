@@ -29,5 +29,5 @@ jobs:
           echo It is third dig-evolution ${{env.digimon_3}} !
       - name: Display data workflow
         run: |
-          echo "Event: ${{toJson(github.event)}}"
           echo Github actor is: $GITHUB_ACTOR
+          echo Github repository is: $GITHUB_REPOSITORY
